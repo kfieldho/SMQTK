@@ -60,9 +60,9 @@ RUN mkdir -p /home/kwuser/.girder/logs
 # Memex's proxy can't use the git protocol
 #RUN git config --global url."https://".insteadOf git://
 
-RUN git clone git://github.com/memex-explorer/geoinfo_space.git
+RUN git clone https://github.com/Kitware/SMQTK.git
 
-WORKDIR /home/kwuser/geoinfo_space
+WORKDIR /home/kwuser/SMQTK/python/smqtk/web/geospace
 
 COPY makelocalcfg.py /home/kwuser/makelocalcfg.py
 
